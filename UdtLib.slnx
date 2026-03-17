@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".github/workflows/ci.yml" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="UdtLib.IntegrationTests/UdtLib.IntegrationTests.csproj" />
+  <Project Path="UdtLib.Tests/UdtLib.Tests.csproj" />
+  <Project Path="UdtLib/UdtLib.csproj" />
+</Solution>

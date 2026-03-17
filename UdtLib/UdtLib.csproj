@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+	<TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <!-- Package identity -->
+  <PropertyGroup>
+    <PackageId>UdtLib</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>yartat</Authors>
+    <Company>Yaroslav Tatarenko</Company>
+    <PackageDescription>
+      A managed modern .NET implementation of the UDT (UDP-based Data Transfer) protocol.
+      Provides reliable, ordered, message-level data transport over UDP with a fully async API
+      built on System.Net.Sockets, System.Threading.Channels, and System.Buffers.
+    </PackageDescription>
+    <PackageTags>udt;udp;networking;reliable-transport;async;sockets;channels</PackageTags>
+    <PackageProjectUrl>https://github.com/yartat/udtsharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yartat/udtsharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright © 2026 Yaroslav Tatarenko</Copyright>
+    <PackageReleaseNotes>Initial release — reliable, ordered UDP transport for modern .NET.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>UdtLib.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>
